@@ -1,0 +1,36 @@
+
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.8rem;
+    font-family: var(--mainfont);
+    font-weight: 400;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+li, a, button {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.navlinks {
+    list-style: none;
+    padding: 0;
+}
+.navlinks li {
+    display: inline;
+    position: relative;
+    margin-right: 15px;
+}
+.navlinks li:not(:last-child)::after {
+    content: "/";
+    position: absolute;
+    right: -10px;
+
+}
+.navlinks li a {
+    transition: all 0.35s ease 0s;
+    color: var(--primary-color);
+}
